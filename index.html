@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Baunii ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#ffd6e8,#f5e6ff,#fff5d6);
+    overflow-x:hidden;
+    color:#333;
+}
+
+/* Floating Hearts */
+.heart{
+    position:fixed;
+    bottom:-20px;
+    color:rgba(255,255,255,0.8);
+    animation:float 10s linear infinite;
+    font-size:20px;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(0);
+        opacity:1;
+    }
+    to{
+        transform:translateY(-120vh);
+        opacity:0;
+    }
+}
+
+/* Hero Section */
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:4rem;
+    color:#ff4f8b;
+    text-shadow:0 0 20px rgba(255,79,139,.4);
+}
+
+.hero p{
+    max-width:700px;
+    margin-top:20px;
+    font-size:1.2rem;
+    line-height:1.8;
+}
+
+.glow{
+    animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from{
+        text-shadow:0 0 10px #ff7eb3;
+    }
+    to{
+        text-shadow:0 0 25px #ff4f8b;
+    }
+}
+
+/* Audio Button */
+.audio-btn{
+    margin-top:25px;
+    border:none;
+    background:#ff4f8b;
+    color:white;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:1rem;
+    transition:.3s;
+}
+
+.audio-btn:hover{
+    transform:scale(1.08);
+}
+
+/* Quote Cards */
+.section{
+    padding:60px 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#ff4f8b;
+    font-size:2rem;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:rgba(255,255,255,.6);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+/* Gallery */
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.gallery img{
+    width:320px;
+    max-width:90%;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* Footer */
+.footer{
+    text-align:center;
+    padding:60px 20px;
+    background:rgba(255,255,255,.4);
+}
+
+.footer h2{
+    color:#ff4f8b;
+    margin-bottom:15px;
+}
+
+.footer p{
+    font-size:1.1rem;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:2.7rem;
+}
+}
+</style>
+</head>
+<body>
+
+<!-- Floating Hearts -->
+<script>
+for(let i=0;i<20;i++){
+    let heart=document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML="❤";
+    heart.style.left=Math.random()*100+"vw";
+    heart.style.animationDuration=(5+Math.random()*8)+"s";
+    heart.style.fontSize=(15+Math.random()*20)+"px";
+    document.body.appendChild(heart);
+}
+</script>
+
+<!-- EDIT AUDIO HERE -->
+<audio id="bgMusic" loop>
+    <source src="music/song.mpeg" type="audio/mpeg">
+</audio>
+
+<section class="hero">
+    <h1 class="glow">For Baunii 🌷😜 ❤️</h1>
+
+    <!-- EDIT QUOTES HERE -->
+    <p>
+        Some friendships become family, and you are that family for me baunii.<br><br>
+        You are one of the most beautiful chapters of my life.<br><br>
+        Thank you for every thing.
+    </p>
+
+    <button class="audio-btn" onclick="toggleMusic()">
+        🎵 Play / Pause Music
+    </button>
+</section>
+
+<section class="section">
+    <h2 class="section-title">Why You're Special ✨</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            ❤️ Bhondu nhi hu mai😭😭.
+        </div>
+
+        <div class="card">
+            🌸 Baunii😜,You will always have a special place in my heart.
+        </div>
+
+        <div class="card">
+            ✨ you are pretty like tulip🌷🌷.
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="section-title">Our Beautiful Memories 📸</h2>
+
+    <div class="gallery">
+
+        <!-- EDIT IMAGES HERE -->
+        <img src="images/photo1.jpeg" alt="Baunii Photo 1">
+
+        <!-- EDIT IMAGES HERE -->
+        <img src="images/photo2.jpeg" alt="Baunii Photo 2">
+
+    </div>
+</section>
+
+<section class="footer">
+    <h2>Forever Grateful For You, Baunii ✨</h2>
+
+    <p>
+        No distance, no time, and no change in life can ever replace
+        the bond we share. Thank you for being you. ❤️
+        You'll always be my best friend baunii😊 and i hope i'll always be your best friend forever too😭😜.
+    </p>
+</section>
+
+<script>
+function toggleMusic(){
+    const music=document.getElementById("bgMusic");
+
+    if(music.paused){
+        music.play();
+    }else{
+        music.pause();
+    }
+}
+</script>
+
+</body>
+</html>
